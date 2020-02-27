@@ -1,0 +1,14 @@
+.weatherpane{
+    -fx-background-image: url("background9.jpg");
+}
+.box{
+    -fx-background-color: rgba(255, 224, 255, 0.13);
+    -fx-effect: dropshadow(three-pass-box, rgba(255, 224, 255, 0.13), 10, 0, 0, 0);
+    -fx-background-radius: 10;
+    -fx-padding: 10;
+}
+
+.label {
+    -fx-font-family: "Calibri Light";
+    -fx-font-weight: bold;
+}

@@ -1,0 +1,23 @@
+.weatherbox{
+    -fx-background-color: rgba(255, 224, 255, 0.13);
+    -fx-effect: dropshadow(three-pass-box, rgba(255, 224, 255, 0.13), 10, 0, 0, 0);
+    -fx-background-radius: 10;
+}
+#gridPane{
+    -fx-background-image: url("background9.jpg");
+    -fx-background-repeat: no-repeat;
+}
+.list-view{
+    -fx-background-color: rgba(135, 181, 183, 0.82);
+}
+#borderPane{
+    -fx-background-color: #363636;
+    /*-fx-background-color: rgba(54, 54, 54, 0.01);*/
+}
+.list-cell:selected{
+    -fx-background-color: rgba(135, 181, 183, 0.82);
+}
+.list-cell{
+    -fx-background-color: #363636;
+    -fx-text-fill: white;
+}

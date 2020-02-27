@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<DialogPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="sample.DeleteLocationController"
+            prefHeight="100" prefWidth="500">
+    <content>
+        <GridPane hgap="10">
+            <Label text="Select the location to delete " GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+            <ChoiceBox fx:id="choiceBox" GridPane.rowIndex="1" GridPane.columnIndex="1" GridPane.columnSpan="2"/>
+
+        </GridPane>
+    </content>
+
+</DialogPane>

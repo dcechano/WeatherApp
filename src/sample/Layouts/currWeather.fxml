@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.geometry.Insets?>
+
+<fx:root stylesheets="@CSS\details.css" type="AnchorPane" xmlns="http://javafx.com/javafx/10.0.2-internal"
+         xmlns:fx="http://javafx.com/fxml/1">
+
+    <HBox AnchorPane.leftAnchor="50" AnchorPane.topAnchor="20" spacing="100">
+
+        <VBox alignment="TOP_CENTER" spacing="10">
+
+            <ImageView fx:id="img"/>
+
+            <Label fx:id="descriptionLabel">
+                <font>
+                    <Font size="20"/>
+                </font>
+            </Label>
+
+        </VBox>
+
+        <VBox fx:id="summaryData" alignment="TOP_CENTER" spacing="50">
+            <padding>
+                <Insets topRightBottomLeft="15"/>
+            </padding>
+
+            <HBox>
+
+                <Label text="Hi:    " styleClass="label">
+                    <font>
+                        <Font size="15"/>
+                    </font>
+                </Label>
+
+                <Label fx:id="hiTemp" styleClass="label">
+                    <font>
+                        <Font size="30"/>
+                    </font>
+                </Label>
+
+            </HBox>
+
+            <HBox>
+
+                <Label text="Lo:    " styleClass="label">
+                    <font>
+                        <Font size="15"/>
+                    </font>
+                </Label>
+
+                <Label fx:id="loTemp" styleClass="label">
+                    <font>
+                        <Font size="30"/>
+                    </font>
+                </Label>
+
+            </HBox>
+
+            <HBox>
+
+                <Label text="Wind chill: " styleClass="label">
+                    <font>
+                        <Font size="15"/>
+                    </font>
+                </Label>
+
+                <Label fx:id="windChillLabel" styleClass="label">
+                    <font>
+                        <Font size="30"/>
+                    </font>
+                </Label>
+
+            </HBox>
+
+        </VBox>
+    </HBox>
+
+    <VBox fx:id="detailData" prefWidth="250.0" AnchorPane.rightAnchor="100" spacing="50" AnchorPane.topAnchor="20">
+        <padding>
+            <Insets topRightBottomLeft="15"/>
+        </padding>
+
+        <HBox>
+
+            <Label text="Precip:    " styleClass="label">
+                <font>
+                    <Font size="15"/>
+                </font>
+            </Label>
+
+            <Label fx:id="precipLabel" styleClass="label">
+                <font>
+                    <Font size="30"/>
+                </font>
+            </Label>
+
+        </HBox>
+
+        <HBox>
+
+            <Label text="Humidity:  " styleClass="label">
+                <font>
+                    <Font size="15"/>
+                </font>
+            </Label>
+
+            <Label fx:id="humidityLabel" text="humidity" styleClass="label">
+                <font>
+                    <Font size="30"/>
+                </font>
+            </Label>
+
+        </HBox>
+
+        <HBox>
+
+            <Label text="Wind Speed:    " styleClass="label">
+                <font>
+                    <Font size="15"/>
+                </font>
+            </Label>
+
+            <Label fx:id="windSpeedLabel" text="wind speed" styleClass="label">
+                <font>
+                    <Font size="30"/>
+                </font>
+            </Label>
+
+        </HBox>
+
+        <HBox>
+
+            <Label text="Wind Direction:   " styleClass="label">
+                <font>
+                    <Font size="15"/>
+                </font>
+            </Label>
+
+            <Label fx:id="windDirLabel" text="wind direction" styleClass="label">
+                <font>
+                    <Font size="30"/>
+                </font>
+            </Label>
+
+        </HBox>
+
+        <HBox>
+
+            <Label text="Cloud Cover:   " styleClass="label">
+                <font>
+                    <Font size="15"/>
+                </font>
+            </Label>
+
+            <Label fx:id="cloudsLabel" text="clouds label" styleClass="label">
+                <font>
+                    <Font size="30"/>
+                </font>
+            </Label>
+
+        </HBox>
+
+    </VBox>
+    <!--    <HBox fx:id="hourlyData" GridPane.rowIndex="1" GridPane.columnIndex="0" GridPane.columnSpan="2"></HBox>-->
+</fx:root>

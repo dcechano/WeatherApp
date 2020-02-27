@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.text.Font?>
+
+<?import javafx.geometry.Insets?>
+<fx:root type="VBox" xmlns:fx="http://javafx.com/fxml" stylesheets="@CSS\weatherboxstyles.css" alignment="TOP_CENTER">
+    <padding>
+        <Insets topRightBottomLeft="10"/>
+    </padding>
+    <Label fx:id="date" lineSpacing="100">
+        <font>
+            <Font size="18"/>
+        </font></Label>
+    <ImageView fx:id="img"/>
+    <Label fx:id="description"/>
+    <HBox alignment="CENTER">
+        <Label text="Hi: "/>
+        <Label fx:id="hiTemp">
+            <font>
+                <Font size="30"/>
+            </font>
+        </Label>
+    </HBox>
+    <HBox alignment="CENTER">
+        <Label text="Lo: "/>
+        <Label fx:id="loTemp">
+            <font>
+                <Font size="30"/>
+            </font>
+        </Label>
+    </HBox>
+
+    <Label fx:id="precipitation"/>
+    <Button fx:id="details" text="Details" onAction="#forecastDetails" alignment="TOP_CENTER"/>
+
+</fx:root>

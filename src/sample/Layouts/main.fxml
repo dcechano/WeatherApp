@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.ImageView?>
+<?import sample.WeatherBox?>
+<?import javafx.geometry.Insets?>
+<BorderPane fx:id="borderPane" xmlns="http://javafx.com/javafx/10.0.2-internal"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.MainController" stylesheets="@CSS\styles.css">
+
+    <center>
+        <GridPane fx:id="gridPane" alignment="CENTER" hgap="50" prefHeight="300.0" vgap="30">
+            <padding>
+                <Insets topRightBottomLeft="15"/>
+            </padding>
+            <columnConstraints>
+                <ColumnConstraints percentWidth="20"/>
+                <ColumnConstraints percentWidth="20"/>
+                <ColumnConstraints percentWidth="20"/>
+                <ColumnConstraints percentWidth="20"/>
+                <ColumnConstraints percentWidth="20"/>
+            </columnConstraints>
+
+            <WeatherBox fx:id="forecast1" GridPane.columnIndex="0" GridPane.rowIndex="0" alignment="CENTER"/>
+            <WeatherBox fx:id="forecast2" GridPane.columnIndex="1" GridPane.rowIndex="0" alignment="CENTER"/>
+            <WeatherBox fx:id="forecast3" GridPane.columnIndex="2" GridPane.rowIndex="0" alignment="CENTER"/>
+            <WeatherBox fx:id="forecast4" GridPane.columnIndex="3" GridPane.rowIndex="0" alignment="CENTER"/>
+            <WeatherBox fx:id="forecast5" GridPane.columnIndex="4" GridPane.rowIndex="0" alignment="CENTER"/>
+
+        </GridPane>
+    </center>
+    <top>
+        <VBox>
+            <MenuBar>
+                <Menu text="Edit">
+                    <MenuItem onAction="#addLocationDialog" text="Add New Location" />
+                    <MenuItem onAction="#deleteLocation" text="Delete Location"/>
+                </Menu>
+            </MenuBar>
+            <ToolBar>
+                <ChoiceBox fx:id="choiceBox"></ChoiceBox>
+                <Button fx:id="todaysWeatherButton" text="Today" onAction="#currWeather"/>
+                <Button fx:id="fiveDayButton" onAction="#fiveDayForecast" text="5 day" />
+                <Button fx:id="refreshButton" onAction="#refresh" text="Refresh" />
+            </ToolBar>
+        </VBox>
+    </top>
+<!--    <left>-->
+<!--        <VBox>-->
+<!--            <ListView fx:id="locListView"/>-->
+<!--        </VBox>-->
+<!--    </left>-->
+</BorderPane>
